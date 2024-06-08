@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/hotwheels-logo.png" alt="Hotwheels Logo" class="logo" onclick="window.location.href='dashboard.html'">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a id="sign-out">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Admin Dashboard</h1>
+        <section>
+            <h2>User Investments</h2>
+            <table id="investments-table">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Company</th>
+                        <th>Amount</th>
+                        <th>Value</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Investments will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Manage Badges</h2>
+            <form id="badge-form">
+                <label for="badge-name">Badge Name:</label>
+                <input type="text" id="badge-name" required>
+                <label for="badge-description">Description:</label>
+                <input type="text" id="badge-description" required>
+                <label for="badge-price">Price:</label>
+                <input type="number" id="badge-price" required>
+                <button type="submit">Add Badge</button>
+            </form>
+            <ul id="badge-list">
+                <!-- Badges will be listed here -->
+            </ul>
+        </section>
+        <section>
+            <h2>Manage Users</h2>
+            <form id="user-form">
+                <label for="user-email">User Email:</label>
+                <input type="email" id="user-email" required>
+                <label for="user-action">Action:</label>
+                <select id="user-action">
+                    <option value="add-coins">Add HW Coins</option>
+                    <option value="remove-coins">Remove HW Coins</option>
+                    <option value="delete-account">Delete Account</option>
+                </select>
+                <input type="number" id="coin-amount" placeholder="Amount (for add/remove)" required>
+                <button type="submit">Apply Action</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>TSY Limited 2024</p>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>

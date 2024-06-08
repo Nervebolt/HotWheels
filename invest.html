@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/hotwheels-logo.png" alt="Hotwheels logo" class="logo" onclick="window.location.href='dashboard.html'">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="invest.html">Invest</a></li>
+                <li><a href="shop.html">Badges Shop</a></li>
+                <li><a href="check-balance.html">Check Balance</a></li>
+                <li><a href="scores.html">Scores</a></li>
+                <li><a id="sign-out">HOTWHEELS 2024</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="investment-box">
+            <h2>Invest here</h2>
+            <form id="invest-form">
+                <label for="investment-amount">Enter your amount here:</label>
+                <input type="number" id="investment-amount" required>
+                <label for="investment-company">Choose a company:</label>
+                <select id="investment-company" required>
+                    <option value="AAPL">Apple</option>
+                    <option value="GOOGL">Google</option>
+                    <option value="MSFT">Microsoft</option>
+                    <option value="AMZN">Amazon</option>
+                    <option value="TSLA">Tesla</option>
+                    <option value="FB">Facebook</option>
+                    <option value="NFLX">Netflix</option>
+                    <option value="NVDA">NVIDIA</option>
+                    <option value="BABA">Alibaba</option>
+                    <option value="V">Visa</option>
+                    <option value="JNJ">Johnson & Johnson</option>
+                    <option value="WMT">Walmart</option>
+                    <option value="PG">Procter & Gamble</option>
+                    <option value="DIS">Disney</option>
+                    <option value="MA">Mastercard</option>
+                    <option value="HD">Home Depot</option>
+                    <option value="BAC">Bank of America</option>
+                    <option value="VZ">Verizon</option>
+                    <option value="PYPL">PayPal</option>
+                    <option value="ADBE">Adobe</option>
+                    <option value="CMCSA">Comcast</option>
+                    <option value="XOM">ExxonMobil</option>
+                    <option value="KO">Coca-Cola</option>
+                    <option value="NKE">Nike</option>
+                    <option value="PFE">Pfizer</option>
+                    <option value="T">AT&T</option>
+                    <option value="PEP">PepsiCo</option>
+                    <option value="MRK">Merck & Co.</option>
+                    <option value="ABT">Abbott Laboratories</option>
+                    <option value="CSCO">Cisco Systems</option>
+                    <option value="COST">Costco</option>
+                    <option value="WFC">Wells Fargo</option>
+                    <option value="INTC">Intel</option>
+                    <option value="MDT">Medtronic</option>
+                    <option value="CRM">Salesforce</option>
+                    <option value="ORCL">Oracle</option>
+                    <option value="MCD">McDonald's</option>
+                    <option value="HON">Honeywell</option>
+                    <option value="IBM">IBM</option>
+                    <option value="QCOM">Qualcomm</option>
+                    <option value="GE">General Electric</option>
+                    <option value="BA">Boeing</option>
+                    <!-- Add more companies as needed -->
+                </select>
+                <button type="submit">Invest</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>TSY Limited 2024</p>
+    </footer>
+    <script src="invest.js"></script>
+</body>
+</html>
